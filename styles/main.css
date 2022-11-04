@@ -1,0 +1,250 @@
+main
+{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0 auto;
+}
+
+main a
+{
+    text-decoration: none;
+}
+
+.global
+{
+    width: 100%;
+}
+
+/* Phone */
+
+.background
+{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    margin: auto 0;
+    background-image: url('../resources/images/background/phone.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel
+{
+    background-image: url('../resources/images/carousel/slide-1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 90%;
+    height: 85%;
+    position: absolute;
+    top: 20px;
+    right: -82px;
+    animation:  backgroundSlide 15s ease-out infinite;
+    -webkit-animation:  backgroundSlide 15s ease-out infinite;
+}
+
+@keyframes backgroundSlide
+{
+    0%
+    {
+        background-image: url('../resources/images/carousel/slide-1.png');
+    }
+
+    25%
+    {
+        background-image: url('../resources/images/carousel/slide-2.png');
+    }
+
+    50%
+    {
+        background-image: url('../resources/images/carousel/slide-3.png');
+    }
+
+    75%
+    {
+        background-image: url('../resources/images/carousel/slide-4.png');
+    }
+}
+
+/* ------ Section Login and Store ------*/
+
+.loginAndStore
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.loginAndStore a 
+{
+    text-decoration: none;
+}
+
+.login, .noAccount, .downloadstore
+{
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+/* Login */
+
+.login h1
+{
+    padding: 40px 0;
+}
+
+.loginAndStore .links
+{
+    padding: 10px 0;
+}
+
+/* Login */
+
+form
+{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login form div 
+{
+    width: 100%;
+    height: 35px;
+    position: relative;
+    margin: 5px 0;
+}
+
+.login form label, .login form input
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.login form label 
+{
+    z-index: -1;
+    font-size: 0.6em;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    color: var(--grey);
+}
+
+.login form input 
+{
+    font-size: 0.9em;
+    padding: 0 5px;
+    background-color: var(--primaryColor);
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-overflow: ellipsis;
+}
+
+.login form button 
+{
+    width: 100%;
+    height: 35px;
+    background-color: rgb(107, 192, 221);
+    color: var(--sectionColor);
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* Separator */
+
+.separator
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.separator hr
+{
+    width: 100px;
+    height: 2px;
+    background-color: var(--grey);
+    margin: 0 10px;
+}
+
+/* Facebook */
+
+.facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.facebook img {
+    margin-right: 5px;
+    width: 20px;
+}
+
+/* Forgot Password */
+.forgotPassword 
+{
+    margin: 20px 0;
+}
+
+/* No Account */
+.noAccount
+{
+    margin: 50px auto;
+}
+
+.noAccount a 
+{
+    font-weight: bold;
+    color: var(--bluesky);
+}
+
+/* Stores */
+
+.downloadstore, .stores img
+{
+    width: 100%;
+}
+
+.stores 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stores a
+{
+    display: inline-block;
+    width: 30%;
+    min-width: 120px;
+    margin: 10px 5px 0px;
+}
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+
+@media all and (min-width: 450px)
+{
+    .login, .noAccount
+    {
+        margin: 20px auto;
+        border: 1px solid var(--lightGrey);
+        background-color: var(--sectionColor);
+    }
+
+    .noAccount
+    {
+        padding: 20px 0;
+    }
+}
+
+@media all and (min-width: 875px)
+{
+
+    .loginAndStore, .phone
+    {
+        width: 350px;
+        display: flex;
+        align-items: center;
+    }
+
+}
